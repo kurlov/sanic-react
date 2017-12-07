@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 // Constant with our paths
 const paths = {
@@ -19,6 +20,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.join(paths.SRC, 'index.html'),
     }),
+    new ExtractTextPlugin('style.css'),
   ],
   module: {
     rules: [
@@ -27,6 +29,18 @@ module.exports = {
         exclude: /node_modules/,
         use: [
           'babel-loader',
+        ],
+      },
+      {
+        test: /\.css$/,
+        loader: ExtractTextPlugin.extract({
+          use: 'css-loader',
+        }),
+      },
+      {
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          'file-loader',
         ],
       },
     ],
