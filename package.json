@@ -4,7 +4,8 @@
   "description": "This is a boilerplate based on webpack, react and sanic as a webserver",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --config webpack.config.js"
+    "build": "webpack --config webpack.config.js",
+    "start": "python3 main.py"
   },
   "author": "",
   "license": "BSD-2-Clause",
