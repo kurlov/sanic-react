@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-class Quiz extends React.Component {
+import '../css/style.css';
+
+class App extends React.Component {
   constructor(props){
     super(props)
     var VARIANT_COUNT = 4 // this indicates how many possible answers will be generated, should be > 1
@@ -107,6 +109,6 @@ function Button(props){
 }
 
 ReactDOM.render(
-  <Quiz/>,
+  <App/>,
   document.getElementById("root")
 )
