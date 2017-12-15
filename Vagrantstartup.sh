@@ -7,4 +7,4 @@ npm install --no-bin-links
 npm run build
 curl https://bootstrap.pypa.io/get-pip.py | sudo python3
 sudo apt-get -qqy install build-essential libssl-dev libffi-dev python3-dev
-sudo pip install sanic
+pip install -r requirements.txt
