@@ -3,7 +3,7 @@ from sanic.response import json, file
 
 app = Sanic()
 
-app.static('/', './dist')
+app.static('/', '../dist')
 
 @app.route("/")
 async def index(request):
