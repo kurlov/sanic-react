@@ -1,4 +1,4 @@
-from main import app
+from backend.main import app
 
 
 def test_fixture_test_client_get():
