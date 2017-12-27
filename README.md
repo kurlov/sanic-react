@@ -10,9 +10,9 @@ $ vagrant up
 
 ## Manual installation
 You should make sure you have:
-- at least `python3.5` with `pip`,
+- at least `python3.5` with `pip`. You might want to create venv
 - `npm`
-- with globaly installed `webpack`
+- globaly installed `webpack`
 
 Then type
 ```
